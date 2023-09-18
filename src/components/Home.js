@@ -1,12 +1,11 @@
 import { useNavigate, Link } from "react-router-dom";
-import { useContext } from "react";
-import AuthContext from "../context/AuthProvider";
+
 import useLogout from "../hooks/useLogout";
 
 
 const Home = () => {
     // eslint-disable-next-line no-unused-vars
-    const { setAuth } = useContext(AuthContext);
+   
     const navigate = useNavigate();
     const logout = useLogout();
     const signOut = async () => {
